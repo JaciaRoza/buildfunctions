@@ -1,0 +1,30 @@
+'''
+Name: Jacia Roza
+Start date: 2/26/24
+End date: 2/26/24
+Description: The program will teach about functions and how to create functions 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+1)Functions - help to simplify code and organize the program
+3)User inputs values to be stored in variables that are on function
+4)Output a message with values from the variables that are on function
+'''
+
+def Addition():
+    print("I add");
+def Subtraction():
+    print("I subtract");
+
+def main():
+    print("This tutorial will demonstrate how functions work.");
+    print("In addition, it will show how to make a decision.");
+    whichone = int(input("Type 1 to Add, 2 to Subtract: "));
+    
+    if(whichone == 1):
+        Addition();
+    else:
+        Subtraction();
+        
+    main()
+
+if __name__ == "__main__": 
+    main()
