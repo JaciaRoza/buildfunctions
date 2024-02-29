@@ -1,56 +1,39 @@
 '''
 Name: Jacia Roza
-Start date: 2/27/24
-End date: 2/27/24
+Start date: 2/29/24
+End date: 3/1/24
 Description: The program will teach about functions and how to create functions and the user will enter a choice from the given choices.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 1)Functions - help to simplify code and organize the program.
 3)User inputs values to be stored in variables that are on function.
 4)Output a message with values from the variables that are on function.
 '''
-
 def Addition():
-    print("I add");
-    num1 = int(input("Enter first number: "));
-    num2 = int(input("Enter second number: "));
     add = num1+num2;
     print("The sum of " + str(num1) + " and " + str(num2) + " is " + str(add));
 def Subtraction():
-    print("I subtract");
-    num1 = int(input("Enter first number: "));
-    num2 = int(input("Enter second number: "));
     diff = num1-num2
     print("The difference of " + str(num1) + " and " + str(num2) + " is " + str(diff));
 def Multiplication():
-    print("I multiply");
-    num1 = int(input("Enter first number: "));
-    num2 = int(input("Enter second number: "));
     mult = num1*num2
     print("The product of " + str(num1) + " and " + str(num2) + " is " + str(mult));
 def Division():
-    print("I divide");
-    num1 = int(input("Enter first number: "));
-    num2 = int(input("Enter second number: "));
     quot = num1/num2
     print("The quotient of " + str(num1) + " and " + str(num2) + " is " + str(quot));
 def Exponent():
-    print("I exponent");
-    num1 = int(input("Enter first number: "));
-    num2 = int(input("Enter second number: "));
     exp = num1**num2
     print("The exponent of " + str(num1) + " and " + str(num2) + " is " + str(exp));
 def Modulus ():
-    print("I mod");
-    num1 = int(input("Enter first number: "));
-    num2 = int(input("Enter second number: "));
     modnum1 = num1%2
     modnum2 = num2%2
     print("The modulus value of " + str(num1) + " is " + str(modnum1));
     print("The modulus value of " + str(num2) + " is " + str(modnum2));
-
+    
 def main():
-    print("Welcome to my program! select from the given choices."); 
+    global num1, num2
     whichone = int(input("Type 1 to Add, 2 to Subtract, 3 to multiply, 4 to divide, 5 to exponent, 6 to mod numbers: "));
+    num1 = int(input("Enter first number: "));
+    num2 = int(input("Enter second number: "));
     
     if(whichone == 1):
         Addition();
@@ -63,9 +46,9 @@ def main():
     if(whichone == 5):
         Exponent();
     if(whichone == 6):
-        Modulus();
+        Modulus();    
         
     main()
-
+    
 if __name__ == "__main__": 
-    main()
+    main() 
