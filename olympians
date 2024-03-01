@@ -1,0 +1,33 @@
+'''
+Name: Jacia Roza
+Start date: 2/29/24
+End date: 3/1/24
+Description: The program will let the user/Olympian enter number of medals and the program will convert the 5 number of medal into prize money.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+1)Functions - help to simplify code and organize the program.
+3)User inputs values to be stored in variables that are on function.
+4)Output a message with values from the variables that are on function.
+'''
+#Arithmetic operations
+def Addition():
+    add = medals * (75000)
+    print("You prize money is " + str(add));
+
+#main program      
+def main():
+    global medals
+    print("Welcome to Olympian game!!");
+    print("You can only input 5 number of gold medals that you won.");
+    medals = int(input("Please input your gold medal number: "));
+    
+    if 1 <= medals <= 5:
+        Addition()
+    else:
+        print("invalid")
+        main()
+        
+    main()
+    
+if __name__ == "__main__":
+    main()
+    
