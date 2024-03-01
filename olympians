@@ -20,7 +20,7 @@ def main():
     print("You can only input 5 number of gold medals that you won.");
     medals = int(input("Please input your gold medal number: "));
     
-    if 1 <= medals <= 5:
+    if (medals < 6 and medals > 0):
         Addition()
     else:
         print("invalid")
@@ -30,4 +30,4 @@ def main():
     
 if __name__ == "__main__":
     main()
-    
+    ()
